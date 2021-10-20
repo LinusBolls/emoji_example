@@ -1,0 +1,20 @@
+<html>
+  <!-- Requires:
+    emoji: { "name": str, "code": int }
+  -->
+  <head>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="emoji">
+        <h2>{{ emoji["name"] }} ({{ emoji["code"] }})</h2>
+        <img
+          src="https://emojiapi.dev/api/v1/{{ emoji['code'] }}.svg"
+          alt="{{ emoji['name'] }}"
+        />
+      </div>
+      <a href="/" class="button">Go Back</a>
+    </div>
+  </body>
+</html>

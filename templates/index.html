@@ -1,0 +1,18 @@
+<html>
+  <!-- Requires:
+    emoji_list: [ { "name": str, "code": int } ]
+  -->
+  <head>
+    <link rel="stylesheet" href="/static/style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>My favourite emojis :)</h1>
+      <div class="emoji_list">
+        {% for emoji in emoji_list %}
+        <a href="emoji/{{ loop.index0 }}"> {{ emoji["name"] }} </a>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>
